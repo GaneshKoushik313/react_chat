@@ -1,0 +1,17 @@
+.sidebar{
+    width: 6%;
+    background: #4a4a4a;
+    color: #ffff;
+}
+.chat-icons{
+    background-color: #a8acb9;
+    width: 40px;
+    height: 40px;
+    padding: 9px 0px;
+    border-radius: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.br-bottom{
+    border-bottom: solid 1px #d8d8d8;
+}

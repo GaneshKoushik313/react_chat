@@ -5,15 +5,18 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="description" content="Web site created using create-react-app"/>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
+    <link type="text/css" rel="stylesheet"href="https://cdn.digicollect.com/cdn/dc_agentdesk_fe/static/css/fuse-html.min.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.digicollect.com/cdn/dc_agentdesk_fe/static/icons/fuse-icon-font/style.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.digicollect.com/cdn/dc_agentdesk_fe/static/css/main.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.digicollect.com/cdn/dc_agentdesk_fe/static/js/flex.css">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -25,6 +28,248 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <style>
+      body{
+        height: 100%;
+        max-height: 100%;
+      }
+      html{
+        height: 100%;
+        max-height: 100%;
+      }
+      .App{
+        height: 100%;
+        max-height: 100%;
+      }
+      #root{
+        height: 100%;
+        max-height: 100%;
+      }
+      .fs-14{
+        font-size: 14px;
+      }
+      .fs-16{
+        font-size: 16px;
+      }
+      .fs-18{
+        font-size: 18px;
+      }
+      .fs-20{
+        font-size: 20px;
+      }
+      .fs-22{
+        font-size: 22px;
+      }
+      .fs-24{
+        font-size: 24px;
+      }
+      .fs-26{
+        font-size: 26px;
+      }
+      .btn-link{
+        background-color: #0d84f2;
+        color: #fff; 
+        border-radius: 19px;
+      }
+      .btn-link:hover{
+        color: #fff;
+        text-decoration: none;
+      }
+      .text-capitalize{
+        text-transform: capitalize;
+      }
+      .text-lowercase{
+        text-transform: lowercase;
+      }
+      .text-uppercase{
+        text-transform: uppercase;
+      }
+      .pull-right{
+        float: right;
+      }
+      .pull-right{
+        float: right;
+      }
+      .pointer{
+        cursor: pointer;
+      }
+      input::placeholder{
+        font-size: 12px;
+      }
+      .content-center {
+          margin: 0 auto;
+      }
+      .w-60{
+        width: 60%;
+      }
+      .p-a{
+        position: absolute;
+      }
+      .p-r{
+        position: relative;
+      }
+      .search-bar{
+        padding-left: 5px !important;
+        padding-right: 25px !important;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      .search-magnify{
+        position: absolute;
+        right: 0;
+        margin-top: 4px;
+      }
+      .search-heading{
+          background: #b3b3b3;
+          border-bottom: solid 1px #cdd2da;
+          position: fixed;
+          width: 28.2%;
+          z-index: 9;
+      }
+      .react-responsive-modal-modal{
+        width: 424px;
+        max-height: 511px;
+        border-radius: 12px;
+        background-color: #ececec !important;
+        padding: 0px !important;
+        margin: 0 auto !important;
+      }
+      .react-responsive-modal-closeButton{
+        outline: 0;
+        display: none !important;
+      }
+      .modal-title{
+        background: #b3b3b3;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+      }
+      .modal-title div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.2rem !important;
+      }
+      .modal-title h5{
+        margin: 0 auto;
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+      .footer-actions{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 44px;
+      }
+      .btn-success {
+        color: #fff !important;
+        border-radius: 18px;
+      }  
+      .modal-body{
+        padding: 0px !important;
+      }
+      .form-control{
+        padding-bottom: 0px !important;
+      }
+      .form-group>label {
+        margin-bottom: 0px !important;
+        color: #303031 !important;
+      }
+      .css-yk16xz-control{
+        background-color: #ececec !important;
+        /* border-color: #ececec !important; */
+        border-bottom: solid 1px #707070 !important;
+      }
+      .css-1wa3eu0-placeholder{
+        font-size: 12px !important;
+        margin-left: 0px !important;
+      }
+      .css-1pahdxg-control{
+        border-color: #ececec !important ;
+        background-color: #ececec !important;
+        box-shadow: none !important;
+      }
+      .group-upload{
+        border: solid 1px #a7a7a7;
+        border-radius: 50%;
+        opacity: 0.4;
+      }
+      .group-upload-icon i{
+          font-size: 35px;
+          color: #707070;
+      }
+      .group-upload-icon{
+        top: 41px;
+      }
+      textarea.form-control{
+        box-shadow: none !important;
+        border-bottom: solid 1px #707070 !important;
+      }
+      input[type="file"]{
+        display: none;
+      }
+      .custom-file-upload {
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        padding: 6px;
+        cursor: pointer;
+        margin-bottom: 25px;
+      }
+
+      .img-wrap{
+        position: relative;
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+      .img-upload:hover i{
+      opacity: 1;
+      }
+      .img-upload:hover{
+        /* background-color: #f5f6f9 !important; */
+        opacity: 0.6;
+      }
+      .img-upload i{
+          position: absolute;
+          right: 46px;
+          top: 47px;
+          opacity: 0;
+          font-size: 30px;
+      }
+      img {
+        width: auto;
+        height: 100%;
+      }
+      .fs-12{
+        font-size: 12px;
+      }
+      ::-webkit-scrollbar-track {
+        -moz-appearance: none !important;
+        background-color: transparent;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        -webkit-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius
+        .2s ease-in-out;
+        transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius .2s
+        ease-in-out;
+        -o-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s
+        ease-in-out;
+        -moz-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s
+        ease-in-out, -moz-border-radius .2s ease-in-out;
+        transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
+        transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out,
+        -webkit-border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out;
+        right: 2px;
+        width: 0px;
+      }
+      .whiteSpace{
+        white-space: nowrap;
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +284,9 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="https://cdn.digicollect.com/cdn/dc_agentdesk_fe/static/libraries/fuse-html.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
